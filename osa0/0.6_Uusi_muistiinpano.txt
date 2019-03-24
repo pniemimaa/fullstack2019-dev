@@ -1,0 +1,20 @@
+note over selain:
+Käyttäjä kirjoittaa lomakkeen input fieldiin uuden
+noten ja painaa talleta -nappia
+end note
+note over selain:
+spa.js: Lomakkeen onSubmit toiminto korvataan
+javascript koodilla jossa formin inputdatasta
+luodaan note json, jossa attribuutit content ja date.
+Uusi note lisätään notes listaan.
+Javascript piirtää uudelleen päivittyneet notet
+käyttäjän selaimelle
+ja lähettää uuden noten palvelimelle.
+end note
+selain->palvelin: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+note over selain:
+Uusi muistiinpano ja timestamp
+POST:n json payloadina.
+Content-type: application/json
+end note
+palvelin->selain: HTTP 201 Note Created
